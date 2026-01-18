@@ -117,8 +117,12 @@ nav > h3 {
     -ms-border-radius: 42px;
     -o-border-radius: 42px;
 }
+#banner-btn-1{
+    margin-right: 14px;
+}
 .banner-right img{
     width: 90%;
+    vertical-align: middle;
 }
 .banner-right{
     position: relative;
@@ -196,13 +200,85 @@ nav > h3 {
 
 /* for mobile */
 @media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column;
+    }
   header {
     padding: 0 16px;
   }
-  nav > ul {
+  .navbar ul {
     display: none;
   }
   .nav-icon {
     display: block;
   }
+
+  .banner{
+    text-align: center;
+  }
+  .banner-right img{
+    width: 60%;
+}
+.banner-title{
+    font-size: 3rem;
+}
+.banner-left #banner-btn-1{
+    margin-right: 0;
+}
+.banner-left button{
+    margin-bottom: 18px;
+    padding: 10px 25px;
+    font-size: .9rem;
+}
+.tooltip-1,.tooltip-2{
+    width: 145px;
+    height: 74px;
+}
+.tooltip-1{
+    top: 10%;
+}
+.tooltip-2{
+    top: 40%;
+    left: 0%;
+}
+.tooltip-1,.tooltip-2{
+    padding: 2px 0 0 0;
+}
+.tooltip-1>h4{
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    color: white;
+}
+.tooltip-text>h4{
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    color: white;
+}
+.tooltip-1>p{
+    font-size: .6rem;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
+.tooltip-text>p{
+    font-size: .6rem;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
+.tooltip-circle{
+    width: 25px;
+    height: 25px;
+    background-color: #E6533C;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.tooltip-2{
+    padding-left: 8px;
+}
 }
