@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* shared styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* main styles */
+
+/* navbar related styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+nav>ul{
+    display: flex;
+    align-items: center;
+    gap: 47px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 39px;
+    -webkit-border-radius: 39px;
+    -moz-border-radius: 39px;
+    -ms-border-radius: 39px;
+    -o-border-radius: 39px;
+}
+nav>ul>li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+    line-height: 120%;
+}
+nav>h3{
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 120%;
+    font-style: italic;
+    color: #E6533C;
+}
+.nav-icon{
+    display: none;
+}
+.nav-icon>p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* Responsive codes */
+
+/* for mobile */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 0 16px;
+    }
+    nav>ul{
+        display: none;
+    }
+    .nav-icon{
+        display: block;
+    }
+}
