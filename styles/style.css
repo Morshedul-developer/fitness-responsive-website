@@ -10,79 +10,199 @@
   font-weight: 400;
 }
 
-html{
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-header{
-    max-width: 1200px;
-    margin: 0 auto;
+nav,
+main,
+.banner,
+.footer-div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex{
+    display: flex;
 }
 
 
 /* main styles */
 
-/* navbar related styles */
-nav{
-    display: flex;
+/* header related styles */
+header {
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17, 1) 0%,
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+nav {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+nav > ul {
+  align-items: center;
+  gap: 47px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  border-radius: 39px;
+  -webkit-border-radius: 39px;
+  -moz-border-radius: 39px;
+  -ms-border-radius: 39px;
+  -o-border-radius: 39px;
+}
+nav > ul > li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+  line-height: 120%;
+}
+nav > h3 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 120%;
+  font-style: italic;
+  color: #e6533c;
+}
+.nav-icon {
+  display: none;
+}
+.nav-icon > p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* banner related styles */
+.banner{
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
+    margin-top: 32px;
 }
-nav>ul{
-    display: flex;
-    align-items: center;
-    gap: 47px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 12px 20px;
-    border-radius: 39px;
-    -webkit-border-radius: 39px;
-    -moz-border-radius: 39px;
-    -ms-border-radius: 39px;
-    -o-border-radius: 39px;
+.banner-left{
+    max-width: 520px;
 }
-nav>ul>li{
-    list-style: none;
+.banner-title{
+    font-size: 4.8rem;
+    line-height: 120%;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 28px;
 }
-nav ul li a{
-    text-decoration: none;
+.banner-des{
+    line-height: 1.5rem;
+    letter-spacing: .5px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 28px;
+}
+.banner-left button{
+    padding: 16px 46.5px;
     color: white;
     font-size: 1.125rem;
-    line-height: 120%;
+    font-weight: 600;
+    line-height: 1.375rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 42px;
+    -webkit-border-radius: 42px;
+    -moz-border-radius: 42px;
+    -ms-border-radius: 42px;
+    -o-border-radius: 42px;
 }
-nav>h3{
-    font-size: 2.25rem;
-    font-weight: 800;
-    line-height: 120%;
-    font-style: italic;
-    color: #E6533C;
+.banner-right img{
+    width: 90%;
 }
-.nav-icon{
-    display: none;
+.banner-right{
+    position: relative;
 }
-.nav-icon>p{
+.tooltip-1{
+    width: 193px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 16px 0 16px 24px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    position: absolute;
+    top: 21%;
+    right: 0;
+    left: 58%;
+}
+.tooltip-1>h4{
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
     color: white;
-    font-size: 1.5rem;
+    margin-bottom: 5px;
 }
-
-
+.tooltip-1>p{
+    font-size: .8rem;
+    line-height: 1.25rem;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
+.tooltip-2{
+    width: 193px;
+    background-color: rgba(48, 48, 48, 0.54);
+    padding: 16px 0 16px 24px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    position: absolute;
+    top: 72%;
+    left: -30%;
+    align-items: center;
+    gap: 12px;
+}
+.tooltip-circle{
+    width: 40px;
+    height: 40px;
+    background-color: #E6533C;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.tooltip-2 h4{
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 5px;
+}
+.tooltip-2 p{
+    font-size: .8rem;
+    line-height: 1.25rem;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.65);
+}
 
 
 /* Responsive codes */
 
 /* for mobile */
 @media screen and (max-width: 576px) {
-    header{
-        padding: 0 16px;
-    }
-    nav>ul{
-        display: none;
-    }
-    .nav-icon{
-        display: block;
-    }
+  header {
+    padding: 0 16px;
+  }
+  nav > ul {
+    display: none;
+  }
+  .nav-icon {
+    display: block;
+  }
 }
