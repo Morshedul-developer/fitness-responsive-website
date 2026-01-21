@@ -39,7 +39,8 @@ body {
   margin: 0 auto;
 }
 
-main > section {
+main > section,
+footer {
   margin-top: 100px;
 }
 
@@ -363,6 +364,61 @@ nav > h3 {
   -o-border-radius: 18px;
 }
 
+/* footer section related styles */
+footer{
+  background-color: var(--tooltip1-bg-color);
+  padding: 66px 0 35px 0;
+}
+.footer-info{
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: end;
+  padding-bottom: 79px;
+  border-bottom: 2px solid var(--tooltip1-bg-color);
+}
+.footer-logo{
+  font-size: 4.375rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 120%;
+  color: var(--secondary-bg-color);
+  margin-bottom: 20px;
+}
+.footer-des{
+  font-size: .875rem;
+  line-height: 24px;
+  letter-spacing: .3px;
+  color: var(--section-para-color);
+}
+.footer-title{
+  font-size: 2rem;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 39px;
+}
+.footer-links{
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-items{
+  list-style: none;
+}
+.footer-link{
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 120%;
+  color: var(--section-para-color);
+}
+.copyright-des{
+  font-size: 1.25rem;
+  line-height: 24px;
+  letter-spacing: .3px;
+  color: var(--section-para-color);
+  text-align: center;
+  margin-top: 36px;
+}
+
+
 /* Responsive codes */
 
 /* for mobile */
@@ -463,5 +519,10 @@ nav > h3 {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 250px);
   padding: 20px;
+}
+.footer-info{
+  grid-template-columns: 1fr;
+  justify-items: start;
+  gap: 30px;
 }
 }
