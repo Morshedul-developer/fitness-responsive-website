@@ -337,6 +337,32 @@ nav > h3 {
   background-color: rgb(151, 171, 224);
 }
 
+/* team section related styles */
+.team-container .section-title,.section-des{
+  text-align: center;
+}
+.team-cards{
+  background-color: var(--tooltip1-bg-color);
+  padding: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 280px);
+  gap: 20px;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+.team-card img{
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+
 /* Responsive codes */
 
 /* for mobile */
@@ -432,4 +458,10 @@ nav > h3 {
     /* grid-column: span 1; */
     grid-column: auto;
   }
+
+  .team-cards{
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 250px);
+  padding: 20px;
+}
 }
