@@ -297,6 +297,7 @@ nav > h3 {
 .exercise-container .section-des {
   margin: 0;
   margin-bottom: 58px;
+  text-align: left;
 }
 .exercise-cards {
   grid-template-columns: repeat(4, 1fr);
@@ -475,7 +476,6 @@ footer{
   }
   .tooltip-1 > h4 {
     font-size: 1.5rem;
-    /* font-weight: 900; */
     line-height: 2.5rem;
     letter-spacing: 1px;
     color: white;
@@ -525,4 +525,35 @@ footer{
   justify-items: start;
   gap: 30px;
 }
+}
+
+/* for tablet device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    padding: 0 16px;
+  }
+  .navbar{
+    padding-top: 20px;
+  }
+  .banner, 
+  .motivation-container{
+    flex-direction: column;
+  }
+  .banner{
+    gap: 100px;
+  }
+  .habit-cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .motivation-container {
+    gap: 60px;
+    padding: 30px 0;
+  }
+  .motivation-info{
+    text-align: center;
+  }
+  .motivation{
+    padding: 50px;
+  }
 }
